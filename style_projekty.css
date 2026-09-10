@@ -1,0 +1,136 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: content-box;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+nav{
+    height: 80px;
+    background-color: #222;
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    color: #fff;
+}
+nav ul{
+    margin: auto;
+    display: flex;
+}
+nav li{
+    margin: 0 2vw;
+    flex-direction: row;
+    list-style-type: none;
+}
+nav li a{
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: text-shadow 0.3s;
+}
+nav li a:hover{
+    text-shadow: 0 0 50px white;
+}
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #222;
+    color: white;
+    height: 60px;
+}
+.logo{
+    text-align: center;
+    margin: auto;
+}
+.green{
+    color: rgb(0, 255, 0);
+}
+.header-img {
+  position: relative;
+  height: 750px;
+  background-image: url(./images/fura1.jpg);
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+}
+.header-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  text-shadow: 2px 2px 2px black;
+}
+.header-bg {
+  height: 750px;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+main{
+    text-align: center;
+}
+.projects{
+    position: relative;
+    display: grid;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    width: 65%;
+    grid-template-columns: repeat(3,2fr);
+    gap: 10px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.project{
+    position: relative;
+    transform: translate(-50%,-50%);
+    top: 50%;
+    left: 50%;
+    width: 21vw;
+    height: 350px;
+    background-color: #adadad;
+    border-radius: 10px;
+    box-shadow: 4px 4px 5px black;
+}
+.img{
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    height: 220px;
+    width: 21vw;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.i1{
+    background-image: url(./images/fura1.jpg);
+}
+.i2{
+    background-image: url(./images/fura2.jpg);
+}
+.i3{
+    background-image: url(./images/fura3.jpg);
+}
+.i4{
+    background-image: url(./images/fura4.jpg);
+}
+.i5{
+    background-image: url(./images/fura5.png);
+}
+.i6{
+    background-image: url(./images/fura6.jpg);
+}
+button{
+    position: absolute;
+    width: 100px;
+    height: 30px;
+    left: 1%;
+    bottom: 1%;
+}
+.project p{
+    text-align: start;
+    margin: 10px;
+}
+.project .tag{
+    position: absolute;
+    right: 1%;
+    bottom: 1%;
+}

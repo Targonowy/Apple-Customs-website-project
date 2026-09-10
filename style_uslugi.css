@@ -1,0 +1,114 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: content-box;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+nav{
+    height: 80px;
+    background-color: #222;
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    color: #fff;
+}
+nav ul{
+    margin: auto;
+    display: flex;
+}
+nav li{
+    margin: 0 2vw;
+    flex-direction: row;
+    list-style-type: none;
+}
+nav li a{
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: text-shadow 0.3s;
+}
+nav li a:hover{
+    text-shadow: 0 0 50px white;
+}
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #222;
+    color: white;
+    height: 60px;
+}
+.logo{
+    text-align: center;
+    margin: auto;
+}
+.green{
+    color: rgb(0, 255, 0);
+}
+.header-img {
+  position: relative;
+  height: 750px;
+  background-image: url(./images/fura1.jpg);
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+}
+.header-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  text-shadow: 2px 2px 2px black;
+}
+.header-bg {
+  height: 750px;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.uslugi_header{
+    margin: 30px 10%;
+    font-size: 1.2rem;
+    text-align: center;
+}
+.image-boxes{
+    width: 70%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+    gap: 20px;
+}
+.box{
+    color: #fff;
+    font-size: 1.5em;
+    text-shadow: 4px 4px 0 black;
+    height: 370px;
+    background-color: #00ff0000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.b1{
+    background-image: url(./images/fura1.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.b2{
+    background-image: url(./images/fura2.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.b3{
+    background-image: url(./images/fura5.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.b4{
+    background-image: url(./images/fura6.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.uslugi_footer{
+    margin: 30px 10%;
+    text-align: center;
+}

@@ -1,0 +1,147 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: content-box;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+nav{
+    height: 80px;
+    background-color: #222;
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    color: #fff;
+}
+nav ul{
+    margin: auto;
+    display: flex;
+}
+nav li{
+    margin: 0 2vw;
+    flex-direction: row;
+    list-style-type: none;
+}
+nav li a{
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: text-shadow 0.3s;
+}
+nav li a:hover{
+    text-shadow: 0 0 50px white;
+}
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #222;
+    color: white;
+    height: 60px;
+}
+.logo{
+    text-align: center;
+    margin: auto;
+}
+.green{
+    color: rgb(0, 255, 0);
+}
+.header-img {
+  position: relative;
+  height: 750px;
+  background-image: url(./images/fura1.jpg);
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+}
+.header-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  text-shadow: 2px 2px 2px black;
+}
+.header-bg {
+  height: 750px;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.text-us{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    text-align: center;
+}
+.contact{
+    display: flex;
+    justify-content: center;
+
+}
+.data{
+    margin: 10px;
+    width: 20%;
+    text-align: center;
+    border: solid 2px #000;
+
+}
+.data h2{
+    text-transform: uppercase;
+    margin: 10px;
+}
+.data h3{
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+.data p{
+    margin-bottom: 10px;
+}
+.data h1{
+    margin-top: 50px;
+}
+form{
+    margin: 10px;
+    text-align: center;
+    width: 50%;
+    border: solid 2px #000;
+}
+form h2{
+    text-transform: uppercase;
+    margin: 20px;
+}
+.small_labels{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+.small_labels input{
+    width: 75%;
+    margin-bottom: 10px;
+}
+select{
+    width: 75%;
+    margin-bottom: 10px;
+}
+.msg textarea{
+    width: 85%;
+    height: 200px;
+    margin-bottom: 10px;
+}
+input[type="submit"]{
+    background-color: #00ff00;
+    border: none;
+    color: #fff;
+    width: 80px;
+    height: 30px;
+    border-radius: 5px;
+    margin: 10px;
+    text-shadow: 1px 1px 1px black;
+}
+input[type="submit"]:hover{
+    background-color: #007700;
+}
+.map{
+    margin: 25px;
+    text-align: center;
+}
+.map iframe{
+    width: 70%;
+    margin-top: 10px;
+}

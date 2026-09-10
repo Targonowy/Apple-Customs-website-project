@@ -1,0 +1,135 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: content-box;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+nav{
+    height: 80px;
+    background-color: #222;
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    color: #fff;
+}
+nav ul{
+    margin: auto;
+    display: flex;
+}
+nav li{
+    margin: 0 2vw;
+    flex-direction: row;
+    list-style-type: none;
+}
+nav li a{
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: text-shadow 0.3s;
+}
+nav li a:hover{
+    text-shadow: 0 0 50px white;
+}
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #222;
+    color: white;
+    height: 60px;
+}
+.logo{
+    text-align: center;
+    margin: auto;
+}
+.green{
+    color: rgb(0, 255, 0);
+}
+.header-img{
+    position: relative;
+    height: 750px;
+    background-image: url(./images/fura1.jpg);
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+}
+.header-text{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    text-shadow: 2px 2px 2px black;
+}
+.header-bg{
+    height: 750px;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+.info{
+    display: grid;
+    height: 300px;
+    grid-template-columns: repeat(3,25%);
+    gap: 50px;
+    justify-content: center;
+}
+.infobox{
+    margin: auto;
+    text-align: center;
+}
+.infobox i{
+    font-size: 32px;
+}
+.quote{
+    height: 500px;
+}
+.quote-img{
+    position: relative;
+    height: 500px;
+    background-image: url(./images/fura2.jpg);
+    background-position: 50% 30%;
+    background-repeat: no-repeat;
+}
+.quote-text{
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    transform: translate(0, -50%);
+    color: #fff;
+    text-shadow: 2px 2px 2px black;
+}
+.quote-bg{
+    height: 500px;
+    background: linear-gradient(to right,rgb(0, 0, 0),rgba(0, 0, 0, 0));
+}
+.history { 
+    padding: 30px 5%; 
+} 
+.history h1 { 
+    text-align: center; 
+    font-size: 32px; 
+    margin-bottom: 50px; 
+} 
+.history-content {
+    display: flex; 
+    align-items: center; 
+    justify-content: space-between; 
+    gap: 50px; 
+    max-width: 1200px; 
+    margin: 0 auto; 
+} 
+.history-text { 
+    flex: 1; 
+} 
+.history-text h2 { 
+    margin-bottom: 15px; 
+} 
+.history-text p { 
+    line-height: 1.6; 
+} 
+.history img { 
+    width: 45%; 
+    max-width: 500px; 
+    height: auto; 
+    object-fit: cover; 
+} 
